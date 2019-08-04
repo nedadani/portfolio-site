@@ -113,7 +113,16 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4em 8em;
     grid-template-areas:
-    "display description"
+    "gif description"
     "buttons made-using"
     "buttons technologies";
+}
+
+.gif {
+    height: 14em; /* 16:9 ratio */
+    width: 25em; /* 16:9 ratio */
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    grid-template-areas: gif;
+    justify-self: center;
+    align-self: center;
 }
