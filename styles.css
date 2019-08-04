@@ -126,3 +126,34 @@ a {
     justify-self: center;
     align-self: center;
 }
+
+#buttons {
+    grid-area: buttons;
+    justify-self: center;
+    align-self: start;
+}
+
+.button {
+    height: 3em;
+    width: 13em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #C9C9C9;
+    border: 0.5px solid #808080;
+    border-radius: 50px;
+    color: #808080;
+    text-align: center;
+    line-height: 3em;
+    cursor: pointer;
+}
+.button:focus {
+    outline:0;
+}
+
+#github-logo {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
