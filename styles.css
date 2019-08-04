@@ -29,7 +29,7 @@ body {
 .nav-li {
     font-family: 'aileronsregular';
     font-size: 1.1em;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     display: inline;
     padding: 0 15px;
 }
@@ -61,7 +61,7 @@ body {
 #rectangle {
     height: 20em;
     width: 20em;
-    border: 3px solid #fff;
+    border: 3px solid rgba(255, 255, 255, 0.8);
     grid-area: name;
     justify-self: center;
     align-self: end;
@@ -73,7 +73,7 @@ body {
 
 #name {
     font-family: 'aileronsregular';
-    color: #fff;
+    color: #C9C9C9;
     font-size: 8em;
     margin: 0;
 }
