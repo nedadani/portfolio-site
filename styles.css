@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+
+@font-face {
+    font-family: 'aileronsregular';
+    src: url('resources/webfontkit/ailerons-regular-webfont.woff2') format('woff2'),
+         url('resources/webfontkit/ailerons-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
 #nav-bar {
     height: 4em;
-    background-color: pink;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,6 +26,9 @@
 }
 
 .nav-li {
+    font-family: 'aileronsregular';
+    font-size: 1.1em;
+    color: #fff;
     display: inline;
     padding: 0 15px;
 }
@@ -23,3 +40,4 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
