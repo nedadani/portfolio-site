@@ -23,6 +23,7 @@ body {
 
 #nav-ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .nav-li {
@@ -44,5 +45,30 @@ body {
         url("resources/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 100fr;
+    grid-auto-rows: 100fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#rectangle {
+    height: 20em;
+    width: 20em;
+    border: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-family: 'aileronsregular';
+    color: #fff;
+    font-size: 8em;
+    margin: 0;
 }
 
