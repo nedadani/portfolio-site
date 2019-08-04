@@ -5,11 +5,11 @@
     justify-content: center;
 }
 
-ul {
+#nav-ul {
     list-style-type: none;
 }
 
-li {
+.nav-li {
     display: inline;
     padding: 0 15px;
 }
