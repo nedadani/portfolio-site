@@ -55,7 +55,7 @@ body {
     grid-template-areas:
     "name"
     "h1"
-    "social";
+    "icons";
 }
 
 #rectangle {
@@ -89,3 +89,14 @@ body {
     align-self: center;
 }
 
+#icons {
+    grid-area: icons;
+    justify-self: center;
+    align-self: start;
+}
+
+.icon {
+    height: 1.7em;
+    width: 1.7em;
+    padding: 0 2px;
+}
