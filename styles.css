@@ -1,4 +1,6 @@
 #nav-bar {
+    height: 4em;
+    background-color: pink;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,4 +14,12 @@
 .nav-li {
     display: inline;
     padding: 0 15px;
+}
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("resources/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
