@@ -51,10 +51,17 @@ body {
     height: calc(100vh - 4em);
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 4em 8em;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#main {
+    grid-template-columns: 20em;
+    grid-template-rows: 20em 4em 4em;
     grid-template-areas:
     "name"
-    "h1"
+    "title"
     "icons";
 }
 
@@ -63,8 +70,6 @@ body {
     width: 20em;
     border: 3px solid rgba(255, 255, 255, 0.8);
     grid-area: name;
-    justify-self: center;
-    align-self: end;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,21 +83,24 @@ body {
     margin: 0;
 }
 
-#h1 {
+#title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1em;
     text-transform: uppercase;
+    text-align: center;
     color: #fff;
-    grid-area: h1;
-    justify-self: center;
-    align-self: center;
+    height: 4em;
+    line-height: 4em;
+    margin: 0;
+    grid-area: title;
 }
 
 #icons {
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
     grid-area: icons;
-    justify-self: center;
-    align-self: start;
 }
 
 a {
