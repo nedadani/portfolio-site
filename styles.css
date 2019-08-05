@@ -105,7 +105,7 @@ a {
     padding: 0 2px;
 }
 
-#projects {
+.projects {
     height: 100vh;
     width: 100vw;
     background-color: #C9C9C9;
@@ -124,10 +124,10 @@ a {
     border: 3px solid rgba(255, 255, 255, 0.8);
     grid-template-areas: gif;
     justify-self: center;
-    align-self: center;
+    align-self: end;
 }
 
-#buttons {
+.buttons {
     grid-area: buttons;
     justify-self: center;
     align-self: start;
@@ -149,11 +149,20 @@ a {
     cursor: pointer;
 }
 .button:focus {
-    outline:0;
+    outline: 0;
 }
 
-#github-logo {
+.github-logo {
     height: 2em;
     width: 2em;
     vertical-align: middle;
+}
+
+.description {
+    color: #808080;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    grid-area: description;
+    justify-self: center;
+    align-self: end;
 }
