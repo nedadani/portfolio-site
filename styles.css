@@ -159,10 +159,48 @@ a {
 }
 
 .description {
+    max-width: 450px;
     color: #808080;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     grid-area: description;
-    justify-self: center;
+    text-align: left;
+    justify-self: start;
     align-self: end;
+}
+
+.project-name {
+    font-size: 1.8em;
+    margin: 0 0 0.7em;
+}
+
+.project-idea {
+    font-size: 1.1em;
+    margin: 0 0 0.7em;
+}
+
+.project-description {
+    font-size: 1em;
+    margin: 0;
+}
+
+.made-using {
+    color: #808080;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    grid-area: made-using;
+    justify-self: start;
+    align-self: center;
+}
+
+.technology {
+    grid-area: technologies;
+}
+
+.technology-img {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
 }
