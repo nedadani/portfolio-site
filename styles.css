@@ -117,35 +117,44 @@ a {
     height: 600px;
     width: 100vw;
     background-color: #C9C9C9;
-    border-bottom: 2px solid rgba(127, 127, 127, 0.2);
+    border-bottom: 1px solid rgba(127, 127, 127, 0.3);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4em 8em;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "gif description"
-    "buttons made-using"
-    "buttons technologies";
+    "side-one line side-two";
+}
+
+.display {
+    grid-area: side-one;
+    justify-content: right;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 25em;
+    grid-template-rows: 14em 4em;
+    grid-template-areas:
+    "gif"
+    "buttons";
 }
 
 .gif {
     height: 14em; /* 16:9 ratio */
     width: 25em; /* 16:9 ratio */
     border: 3px solid rgba(255, 255, 255, 0.8);
-    grid-template-areas: gif;
-    justify-self: center;
-    align-self: end;
+    grid-area: gif;
 }
 
 .buttons {
     margin: 20px 0 0;
     grid-area: buttons;
     justify-self: center;
-    align-self: start;
+    align-self: center;
 }
 
 .button {
-    height: 3em;
-    width: 13em;
+    height: 2.5em;
+    width: 12em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding: 0;
@@ -155,7 +164,7 @@ a {
     border-radius: 50px;
     color: #808080;
     text-align: center;
-    line-height: 3em;
+    line-height: 2.5em;
     cursor: pointer;
 }
 .button:focus {
@@ -168,16 +177,34 @@ a {
     vertical-align: middle;
 }
 
+.vertical-line {
+    background-color: rgba(127, 127, 127, 0.3);
+    height: 400px;
+    align-self: center;
+}
+
+.details {
+    grid-area: side-two;
+    align-self: center;
+}
+
 .description {
-    max-width: 450px;
     color: #808080;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 0 20px;
+    justify-content: left;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 25em;
+    grid-template-rows: 14em 4em 4em;
+    grid-template-areas:
+    "description"
+    "made-using"
+    "technologies";
+}
+
+.text {
     grid-area: description;
-    text-align: left;
-    justify-self: start;
-    align-self: end;
 }
 
 .project-name {
@@ -200,10 +227,7 @@ a {
     font-size: 1em;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 0 20px;
     grid-area: made-using;
-    justify-self: start;
-    align-self: center;
 }
 
 .technology {
