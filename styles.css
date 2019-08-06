@@ -259,6 +259,7 @@ a {
     border: 1px solid #808080;
     font-family: 'Montserrat', sans-serif;
     color: #808080;
+    box-shadow: 2px 2px 8px -4px rgba(0,0,0,0.75);
     justify-self: center;
     align-self: center;
     display: grid;
