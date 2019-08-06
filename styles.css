@@ -207,17 +207,17 @@ a {
 }
 
 .project-name {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 0 0 0.7em;
 }
 
 .project-idea {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0 0 0.7em;
 }
 
 .project-description {
-    font-size: 1em;
+    font-size: 0.95em;
     margin: 0;
 }
 
