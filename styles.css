@@ -117,7 +117,6 @@ a {
     height: 600px;
     width: 100vw;
     background-color: #C9C9C9;
-    border-bottom: 1px solid rgba(127, 127, 127, 0.3);
     display: grid;
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1px 1fr;
@@ -239,4 +238,96 @@ a {
     height: 50px;
     width: 50px;
     margin: 0 5px;
+}
+
+#certifications {
+    height: 600px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20em 20em 20em;
+    grid-template-rows: 20em 20em;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "card-1 card-2 card-3"
+    "card-4 card-5 ."
+}
+
+.card {
+    border: 1px solid #808080;
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    "image name"
+    "image date";
+}
+
+.website-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.website-link {
+    justify-self: center;
+    align-self: center;
+    grid-area: image;
+}
+
+.certificate-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.certificate-link {
+    color: #808080;
+    justify-self: left;
+    align-self: end;
+    grid-area: name;
+}
+
+.certificate-date {
+    font-size: 0.9em;
+    font-weight: 300;
+    justify-self: left;
+    align-self: top;
+    margin: 0;
+    grid-area: date;
+}
+
+.middle {
+    grid-area: middle;
+    padding: 10px 0 0 15px;
+    margin: 0;
+}
+
+.middle li {
+    list-style-type: none;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+.bottom {
+    margin: 0;
+    padding: 0;
+    grid-area: bottom;
 }
