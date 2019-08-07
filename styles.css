@@ -256,6 +256,8 @@ a {
 }
 
 .card {
+    height: 20em;
+    width: 20em;
     border: 1px solid #808080;
     font-family: 'Montserrat', sans-serif;
     color: #808080;
@@ -264,7 +266,7 @@ a {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 3px 1fr 3px 1fr;
+    grid-template-rows: 70px 3px 1fr 3px auto;
     grid-template-areas:
     "top"
     "dicider"
