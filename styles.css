@@ -264,10 +264,12 @@ a {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 1fr 1fr;
+    grid-template-rows: 70px 3px 1fr 3px 1fr;
     grid-template-areas:
     "top"
+    "dicider"
     "middle"
+    "divider"
     "bottom";
 }
 
@@ -317,7 +319,7 @@ a {
 
 .middle {
     grid-area: middle;
-    padding: 10px 0 0 15px;
+    padding: 10px 15px;
     margin: 0;
 }
 
@@ -331,4 +333,12 @@ a {
     margin: 0;
     padding: 0;
     grid-area: bottom;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 16em;
+    background-color: rgba(127, 127, 127, 0.3);
+    justify-self: center;
+    align-self: center;
 }
