@@ -250,9 +250,6 @@ a {
     grid-template-rows: 20em 20em;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas:
-    "card-1 card-2 card-3"
-    "card-4 card-5 ."
 }
 
 .card {
@@ -266,7 +263,7 @@ a {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 3px 1fr 3px auto;
+    grid-template-rows: 75px 3px 1fr 3px auto;
     grid-template-areas:
     "top"
     "dicider"
@@ -276,6 +273,7 @@ a {
 }
 
 .top {
+    padding: 10px 10px;
     grid-area: top;
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -298,7 +296,7 @@ a {
 }
 
 .certificate-name {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     margin: 0;
 }
@@ -327,19 +325,33 @@ a {
 
 .middle li {
     list-style-type: none;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 5px 0;
 }
 
 .bottom {
     margin: 0;
-    padding: 0;
+    padding: 10px 15px;
     grid-area: bottom;
+}
+
+.bottom li {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding: 5px 0;
+}
+
+.project-link {
+    color: #808080;
+}
+
+.project-link:hover {
+    text-decoration: underline;
 }
 
 .horizontal-line {
     height: 1px;
-    width: 16em;
+    width: 18em;
     background-color: rgba(127, 127, 127, 0.3);
     justify-self: center;
     align-self: center;
