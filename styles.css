@@ -428,7 +428,31 @@ a {
 }
 
 .message {
+    justify-self: start;
+}
+
+input[type=text] {
+    height: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+    padding: 0 0 5px 0;
     border: none;
     border-bottom: 1px solid #808080;
-    justify-self: start;
+}
+
+input:focus {
+    outline: 0;
+}
+
+textarea {
+    height: 1em;
+    color: #808080;
+    padding: 0 0 5px 0;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #808080;
+}
+
+textarea:focus {
+    outline: 0;
 }
