@@ -140,7 +140,7 @@ a {
 .gif {
     height: 14em; /* 16:9 ratio */
     width: 25em; /* 16:9 ratio */
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     grid-area: gif;
 }
 
