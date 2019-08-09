@@ -333,6 +333,10 @@ a {
     margin: 0;
     padding: 10px 15px;
     grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
 }
 
 .bottom li {
