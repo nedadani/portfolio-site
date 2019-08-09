@@ -241,11 +241,10 @@ a {
 }
 
 #certifications {
-    height: 600px;
+    height: 700px;
     width: 100vw;
-    padding: 50px 0;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     display: grid;
     grid-template-columns: 20em 20em 20em;
     grid-template-rows: 20em 20em;
@@ -360,4 +359,76 @@ a {
     background-color: rgba(127, 127, 127, 0.3);
     justify-self: center;
     align-self: center;
+}
+
+#contact-form {
+    height: 600px;
+    width: 100vw;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#contact {
+    height: 400px;
+    width: 700px;
+    border: 1px solid #808080;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+    "heading heading"
+    "icn contact"
+    "button button";
+}
+
+#heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #808080;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+    grid-area: heading;
+}
+
+#social-handles {
+    grid-area: icn;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.icn {
+    height: 40px;
+    width: 40px;
+    padding: 5px 0;
+}
+
+#contact-details {
+    color: #808080;
+    font-size: 0.8em;
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 1fr 1fr 1fr 100px;
+    grid-column-gap: 20px;
+}
+
+.field-name {
+    margin: 0;
+    justify-self: end;
+    text-transform: uppercase;
+}
+
+.message {
+    border: none;
+    border-bottom: 1px solid #808080;
+    justify-self: start;
 }
