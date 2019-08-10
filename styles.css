@@ -8,6 +8,14 @@
     font-style: normal;
 }
 
+:root {
+    --white: #fff;
+    --very-light-grey: #F5F5F5;
+    --light-grey: #C9C9C9;
+    --grey: #808080;
+    --dark-grey: #3D3D3D;
+}
+
 body {
     margin: 0;
 }
@@ -29,7 +37,8 @@ body {
 .nav-li {
     font-family: 'aileronsregular';
     font-size: 1.1em;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--white);
+    opacity: 0.8;
     display: inline;
     padding: 0 15px;
 }
@@ -68,7 +77,8 @@ body {
 #rectangle {
     height: 20em;
     width: 20em;
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    border: 3px solid var(--white);
+    opacity: 0.8;
     grid-area: name;
     display: flex;
     flex-direction: column;
@@ -78,7 +88,7 @@ body {
 
 #name {
     font-family: 'aileronsregular';
-    color: #C9C9C9;
+    color: var(--light-grey);
     font-size: 8em;
     margin: 0;
 }
@@ -89,7 +99,7 @@ body {
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     height: 4em;
     line-height: 4em;
     margin: 0;
@@ -115,7 +125,7 @@ a {
 .project {
     height: 600px;
     width: 100vw;
-    background-color: #C9C9C9;
+    background-color: var(--very-light-grey);
     display: grid;
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1px 1fr;
@@ -139,7 +149,8 @@ a {
 .gif {
     height: 14em; /* 16:9 ratio */
     width: 25em; /* 16:9 ratio */
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--white);
+    opacity: 0.8;
     grid-area: gif;
 }
 
@@ -157,10 +168,10 @@ a {
     font-weight: 500;
     padding: 0;
     margin: 0 10px;
-    background-color: #C9C9C9;
-    border: 0.5px solid #808080;
+    background-color: var(--very-light-grey);
+    border: 0.5px solid var(--grey);
     border-radius: 50px;
-    color: #808080;
+    color: var(--grey);
     text-align: center;
     line-height: 2.5em;
     cursor: pointer;
@@ -176,7 +187,8 @@ a {
 }
 
 .vertical-line {
-    background-color: rgba(127, 127, 127, 0.3);
+    background-color: var(--grey);
+    opacity: 0.3;
     height: 400px;
     align-self: center;
 }
@@ -187,7 +199,7 @@ a {
 }
 
 .description {
-    color: #808080;
+    color: var(--grey);
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     justify-content: left;
@@ -221,7 +233,7 @@ a {
 }
 
 .made-using {
-    color: #808080;
+    color: var(--grey);
     font-size: 1em;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
@@ -254,10 +266,9 @@ a {
 .card {
     height: 20em;
     width: 20em;
-    border: 1px solid #808080;
+    border: 1px solid var(--grey);
     font-family: 'Montserrat', sans-serif;
-    color: #808080;
-    box-shadow: 2px 2px 8px -4px rgba(0,0,0,0.75);
+    color: var(grey);
     justify-self: center;
     align-self: center;
     display: grid;
@@ -301,7 +312,7 @@ a {
 }
 
 .certificate-link {
-    color: #808080;
+    color: var(--grey);
     justify-self: left;
     align-self: end;
     grid-area: name;
@@ -345,7 +356,7 @@ a {
 }
 
 .project-link {
-    color: #808080;
+    color: var(--grey);
 }
 
 .project-link:hover {
@@ -355,7 +366,8 @@ a {
 .horizontal-line {
     height: 1px;
     width: 18em;
-    background-color: rgba(127, 127, 127, 0.3);
+    background-color: var(--dark-grey);
+    opacity: 0.3;
     justify-self: center;
     align-self: center;
 }
@@ -363,7 +375,7 @@ a {
 #contact-form {
     height: 600px;
     width: 100vw;
-    background-color: #fff;
+    background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -372,7 +384,7 @@ a {
 #contact {
     height: 400px;
     width: 700px;
-    border: 1px solid #808080;
+    border: 1px solid var(--grey);
     font-family: 'Montserrat', sans-serif;
     justify-self: center;
     align-self: center;
@@ -389,7 +401,7 @@ a {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.2em;
-    color: #808080;
+    color: var(--grey);
     margin: 0;
     align-self: center;
     text-align: center;
@@ -411,9 +423,10 @@ a {
 }
 
 #contact-details {
-    color: #808080;
+    color: var(--grey);
     font-size: 0.8em;
-    border-left: 1px solid rgba(127, 127, 127, 0.3);
+    border-left: 1px solid var(--dark-grey);
+    opacity: 0.3;
     grid-area: contact;
     display: grid;
     grid-template-columns: 100px 300px;
@@ -434,10 +447,10 @@ a {
 input[type=text] {
     height: 1em;
     font-family: 'Montserrat', sans-serif;
-    color: #808080;
+    color: var(--grey);
     padding: 0 0 5px 0;
     border: none;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid var(--grey);
 }
 
 input:focus {
@@ -446,11 +459,11 @@ input:focus {
 
 textarea {
     height: 1em;
-    color: #808080;
+    color: var(--grey);
     padding: 0 0 5px 0;
     resize: none;
     border: none;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid var(--grey);
 }
 
 textarea:focus {
@@ -465,7 +478,7 @@ textarea:focus {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-weight: 500;
-    background-color: #C9C9C9;
+    background-color: var(--light-grey);
     border: none;
     border-radius: 25px;
     justify-self: end;
