@@ -499,3 +499,40 @@ textarea:focus {
         width: 2.4em;
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    #nav-bar {
+        height: 5.6em;
+    }
+
+    .nav-li {
+        font-size: 1.5em;
+    }
+
+    #hero {
+        background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45), 
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("resources/hero-image-mobile.jpg");
+    }
+
+    #rectangle {
+        height: 28em;
+        width: 28em;
+    }
+
+    #name {
+        font-size: 11em;
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        height: 2.4em;
+        width: 2.4em;
+    }
+}
