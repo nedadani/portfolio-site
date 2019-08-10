@@ -42,7 +42,7 @@ body {
             rgba(0, 0, 0, 0.45), 
             rgba(0, 0, 0, 0.45)
         ),
-        url("resources/hero-image.jpg");
+        url("resources/hero-image-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -99,7 +99,6 @@ body {
 #icons {
     text-align: center;
     height: 4em;
-    line-height: 4em;
     grid-area: icons;
 }
 
@@ -471,4 +470,32 @@ textarea:focus {
     border-radius: 25px;
     justify-self: end;
     grid-area: send;
+}
+
+@media only screen and (min-width: 1600px) {
+    #nav-bar {
+        height: 5.6em;
+    }
+
+    .nav-li {
+        font-size: 1.5em;
+    }
+
+    #rectangle {
+        height: 28em;
+        width: 28em;
+    }
+
+    #name {
+        font-size: 11em;
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        height: 2.4em;
+        width: 2.4em;
+    }
 }
