@@ -434,10 +434,9 @@ a {
 
 #contact-details {
     color: var(--dark-grey);
-    opacity: 0.9;
     font-size: 0.8em;
     border-left: 1px solid var(--dark-grey);
-    opacity: 0.3;
+    opacity: 0.8;
     grid-area: contact;
     display: grid;
     grid-template-columns: 100px 300px;
@@ -654,7 +653,7 @@ textarea:focus {
     }
 
     .nav-li {
-        font-size: 1.5em;
+        font-size: 0.9em;
     }
 
     #hero {
@@ -666,22 +665,163 @@ textarea:focus {
             url("resources/hero-image-mobile.jpg");
     }
 
+    #main {
+        grid-template-columns: 100vw;
+        grid-template-rows: 18em 4em 4em;
+        grid-template-areas:
+        "name"
+        "title"
+        "icons";
+    }
+
     #rectangle {
-        height: 28em;
-        width: 28em;
+        height: 18em;
+        width: 18em;
     }
 
     #name {
-        font-size: 11em;
+        font-size: 8em;
     }
 
     #title {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .icon {
         height: 2.4em;
         width: 2.4em;
+    }
+
+    .project {
+        height: auto;
+        display: grid;
+        grid-column-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 50px;
+        grid-template-areas:
+        "side-two"
+        "side-one";
+    }
+
+    .description {
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-name {
+        font-size: 1.8em;
+    }
+    
+    .project-idea {
+        font-size: 1.15em;
+    }
+    
+    .project-description {
+        font-size: 1.1em;
+    }
+    
+    .made-using {
+        font-size: 1.15em;
+    }
+
+    .display {
+        grid-template-columns: 100vw;
+        grid-template-rows: 10em 4em;
+        grid-template-areas:
+        "gif"
+        "buttons";
+    }
+
+    .gif {
+        height: 10em; /* 16:9 ratio */
+        width: 18em; /* 16:9 ratio */
+        justify-self: center;
+    }
+
+    .buttons {
+        margin: 0;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .description {
+        grid-template-columns: 100vw;
+    }
+
+    #certifications {
+        height: auto;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 0;
+    }
+
+    .card {
+        min-height: 85vw;
+        width: 85vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 3px 1fr 3px auto;
+    }
+
+    #contact-form {
+        height: auto;
+        width: 100vw;
+    }
+
+    #contact {
+        height: auto;
+        width: 100vw;
+        border: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 50px 100px;
+        grid-template-areas:
+        "heading"
+        "contact"
+        "send"
+        "icn";
+    }
+
+    #contact-details {
+        padding: 0 15px;
+        border: none;
+        grid-area: contact;
+        display: grid;
+        grid-template-columns: 91px auto;
+        grid-template-rows: repeat(4, 60px);
+        grid-column-gap: 5px;
+    }
+
+    .field-name {
+        margin: 0;
+        justify-self: start;
+        text-transform: uppercase;
+    }
+
+    #send-button {
+        padding: 0;
+        margin: 0;
+        width: 80vw;
+        height: 40px;
+        font-size: 1em;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #social-handles {
+        flex-direction: row;
+    }
+    
+    .icn {
+        height: 40px;
+        width: 40px;
+        padding: 0 10px;
     }
 
 }
