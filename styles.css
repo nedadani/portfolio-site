@@ -312,6 +312,8 @@ a {
 }
 
 .certificate-name {
+    color: var(--dark-grey);
+    opacity: 0.8;
     font-size: 1em;
     font-weight: 600;
     margin: 0;
@@ -334,6 +336,7 @@ a {
 }
 
 .middle {
+    color: var(--dark-grey);
     grid-area: middle;
     padding: 10px 15px;
     margin: 0;
@@ -356,6 +359,7 @@ a {
 }
 
 .bottom li {
+    color: var(--dark-grey);
     list-style-type: none;
     font-size: 0.8em;
     padding: 5px 0;
@@ -518,6 +522,10 @@ textarea:focus {
         width: 2.4em;
     }
 
+    .project {
+        grid-column-gap: 50px;
+    }
+
     .display {
         grid-template-columns: 30em;
         grid-template-rows: 17em 4em;
@@ -561,6 +569,49 @@ textarea:focus {
     .technology-img {
         height: 55px;
         width: 55px;
+    }
+
+    #certifications {
+        height: 800px;
+        width: 100vw;
+        grid-template-columns: 22em 22em 22em;
+        grid-template-rows: 22em 22em;
+    }
+
+    .card {
+        height: 22em;
+        width: 22em;
+        grid-template-rows: 80px 3px 1fr 3px auto;
+    }
+
+    .top {
+        padding: 10px 10px;
+        grid-template-columns: 55px 1fr;
+    }
+    
+    .website-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .certificate-name {
+        font-size: 1.1em;
+    }
+
+    .certificate-date {
+        font-size: 1em;
+    }
+
+    .middle li {
+        font-size: 0.88em;
+    }
+
+    .bottom li {
+        font-size: 0.88em;
+    }
+
+    .horizontal-line {
+        width: 20em;
     }
 }
 
