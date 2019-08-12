@@ -24,6 +24,7 @@ body {
     height: 4em;
     background-color: transparent;
     display: flex;
+    overflow: hidden;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -41,6 +42,12 @@ body {
     opacity: 0.8;
     display: inline;
     padding: 0 15px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #hero {
