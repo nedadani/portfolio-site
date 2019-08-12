@@ -17,9 +17,11 @@
         <div id="hero">
             <div id="nav-bar">
                 <ul id="nav-ul">
-                    <li class="nav-li">Projects</li>
-                    <li class="nav-li">Certifications</li>
-                    <li class="nav-li">Contact</li>
+                    <a href="#projects"><li class="nav-li">Projects</li></a>
+                    <a href="#certifications"
+                        ><li class="nav-li">Certifications</li></a
+                    >
+                    <a href="#contact-form"><li class="nav-li">Contact</li></a>
                 </ul>
             </div>
             <div id="header">
@@ -66,72 +68,70 @@
                     </div>
                 </div>
             </div>
-            <div class="project">
-                <div class="display">
-                    <img
-                        src=""
-                        alt="Diner App Gif"
-                        class="gif"
-                    />
-                    <div class="buttons">
-                        <a
-                            href="https://nedakinduryte.github.io/dining-finder/"
-                            target="_blank"
-                        >
-                            <button type="button" class="button">
-                                See the website
-                            </button>
-                        </a>
-                        <a
-                            href="https://github.com/nedakinduryte/dining-finder"
-                            target="_blank"
-                        >
-                            <button type="button" class="button">
-                                <img
-                                    src="resources/github-dark.png"
-                                    alt="Github Logo"
-                                    class="github-logo"
-                                />
-                                Github
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="vertical-line"></div>
-                <div class="details">
-                    <div class="description">
-                        <div class="text">
-                            <h2 class="project-name">Diner App</h2>
-                            <h3 class="project-idea">
-                                An app made to help you choose a place to eat in
-                                your city.
-                            </h3>
-                            <p class="project-description">
-                                Simply type the name of the city that you’re in,
-                                choose the type of food that you’d like to eat
-                                today and hit “Search”. You’ll be provided with
-                                three options nicely displayed on a map and all
-                                the necessary information about the restaurants
-                                on the side bar.
-                            </p>
+            <div id="projects">
+                <div class="project">
+                    <div class="display">
+                        <img src="" alt="Diner App Gif" class="gif" />
+                        <div class="buttons">
+                            <a
+                                href="https://nedakinduryte.github.io/dining-finder/"
+                                target="_blank"
+                            >
+                                <button type="button" class="button">
+                                    See the website
+                                </button>
+                            </a>
+                            <a
+                                href="https://github.com/nedakinduryte/dining-finder"
+                                target="_blank"
+                            >
+                                <button type="button" class="button">
+                                    <img
+                                        src="resources/github-dark.png"
+                                        alt="Github Logo"
+                                        class="github-logo"
+                                    />
+                                    Github
+                                </button>
+                            </a>
                         </div>
-                        <p class="made-using">Made using:</p>
-                        <div class="technology">
-                            <img
-                                src="resources/javascript.png"
-                                alt="JavaScript"
-                                class="technology-img"
-                            />
-                            <img
-                                src="resources/react.png"
-                                alt="React"
-                                class="technology-img"
-                            />
-                            <img
-                                src="resources/materialui.png"
-                                alt="Material-UI"
-                                class="technology-img"
-                            />
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="details">
+                        <div class="description">
+                            <div class="text">
+                                <h2 class="project-name">Diner App</h2>
+                                <h3 class="project-idea">
+                                    An app made to help you choose a place to
+                                    eat in your city.
+                                </h3>
+                                <p class="project-description">
+                                    Simply type the name of the city that you’re
+                                    in, choose the type of food that you’d like
+                                    to eat today and hit “Search”. You’ll be
+                                    provided with three options nicely displayed
+                                    on a map and all the necessary information
+                                    about the restaurants on the side bar.
+                                </p>
+                            </div>
+                            <p class="made-using">Made using:</p>
+                            <div class="technology">
+                                <img
+                                    src="resources/javascript.png"
+                                    alt="JavaScript"
+                                    class="technology-img"
+                                />
+                                <img
+                                    src="resources/react.png"
+                                    alt="React"
+                                    class="technology-img"
+                                />
+                                <img
+                                    src="resources/materialui.png"
+                                    alt="Material-UI"
+                                    class="technology-img"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,10 +446,24 @@
                     </div>
                     <div class="separator"></div>
                     <form id="contact-details">
-                        <p class="field-name">To:</p><span className="message">neda.kinduryte@gmail.com</span>
-                        <p class="field-name">Your e-mail:</p><input type="text" name="your-email" className="message">
-                        <p class="field-name">Your name:</p><input type="text" name="your-name" className="message">
-                        <p class="field-name">Message:</p><textarea className="message"></textarea>
+                        <p class="field-name">To:</p>
+                        <span className="message"
+                            >neda.kinduryte@gmail.com</span
+                        >
+                        <p class="field-name">Your e-mail:</p>
+                        <input
+                            type="text"
+                            name="your-email"
+                            className="message"
+                        />
+                        <p class="field-name">Your name:</p>
+                        <input
+                            type="text"
+                            name="your-name"
+                            className="message"
+                        />
+                        <p class="field-name">Message:</p>
+                        <textarea className="message"></textarea>
                     </form>
                     <button type="button" id="send-button">Send</button>
                 </div>
