@@ -258,7 +258,7 @@ a {
 }
 
 #certifications {
-    height: 700px;
+    height: 800px;
     width: 100vw;
     justify-content: center;
     align-content: center;
@@ -385,7 +385,7 @@ a {
 #contact-form {
     height: 600px;
     width: 100vw;
-    background-color: var(--white);
+    background-color: var(--very-light-grey);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -394,7 +394,6 @@ a {
 #contact {
     height: 400px;
     width: 700px;
-    border: 1px solid var(--grey);
     font-family: 'Montserrat', sans-serif;
     justify-self: center;
     align-self: center;
@@ -458,6 +457,7 @@ input[type=text] {
     height: 1em;
     font-family: 'Montserrat', sans-serif;
     color: var(--grey);
+    background-color: var(--very-light-grey);
     padding: 0 0 5px 0;
     border: none;
     border-bottom: 1px solid var(--grey);
@@ -470,6 +470,7 @@ input:focus {
 textarea {
     height: 1em;
     color: var(--grey);
+    background-color: var(--very-light-grey);
     padding: 0 0 5px 0;
     resize: none;
     border: none;
@@ -693,12 +694,13 @@ textarea:focus {
     }
 
     .project {
-        height: auto;
+        height: 700px;
+        padding: 25px 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        grid-row-gap: 50px;
+        grid-row-gap: 10px;
         grid-template-areas:
         "side-two"
         "side-one";
@@ -756,6 +758,7 @@ textarea:focus {
 
     #certifications {
         height: auto;
+        padding: 50px 0;
         width: 100vw;
         display: grid;
         grid-template-columns: 1fr;
