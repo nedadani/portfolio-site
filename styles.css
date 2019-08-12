@@ -45,7 +45,7 @@ body {
 
 #hero {
     height: 100vh;
-    width: 100vw;
+    width: auto;
     background:
         linear-gradient(
             rgba(0, 0, 0, 0.45), 
@@ -122,9 +122,14 @@ a {
     padding: 0 2px;
 }
 
+#projects {
+    height: auto;
+    width: auto;
+}
+
 .project {
     height: 600px;
-    width: 100vw;
+    width: auto;
     background-color: var(--very-light-grey);
     display: grid;
     grid-column-gap: 40px;
@@ -259,7 +264,7 @@ a {
 
 #certifications {
     height: 800px;
-    width: 100vw;
+    width: auto;
     justify-content: center;
     align-content: center;
     display: grid;
@@ -384,7 +389,7 @@ a {
 
 #contact-form {
     height: 600px;
-    width: 100vw;
+    width: auto;
     background-color: var(--very-light-grey);
     display: grid;
     grid-template-columns: 1fr;
@@ -574,7 +579,7 @@ textarea:focus {
 
     #certifications {
         height: 800px;
-        width: 100vw;
+        width: auto;
         grid-template-columns: 22em 22em 22em;
         grid-template-rows: 22em 22em;
     }
@@ -617,7 +622,7 @@ textarea:focus {
 
     #contact-form {
         height: 800px;
-        width: 100vw;
+        width: auto;
     }
 
     #contact {
@@ -759,7 +764,7 @@ textarea:focus {
     #certifications {
         height: auto;
         padding: 50px 0;
-        width: 100vw;
+        width: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
@@ -780,7 +785,7 @@ textarea:focus {
 
     #contact {
         height: auto;
-        width: 100vw;
+        width: auto;
         border: none;
         grid-template-columns: 1fr;
         grid-template-rows: 100px auto 50px 100px;
