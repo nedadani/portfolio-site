@@ -660,7 +660,7 @@ textarea:focus {
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 576px) {
     #nav-bar {
         height: 5.6em;
     }
@@ -697,7 +697,7 @@ textarea:focus {
     }
 
     #title {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .icon {
@@ -706,13 +706,13 @@ textarea:focus {
     }
 
     .project {
-        height: 700px;
+        height: auto;
         padding: 25px 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        grid-row-gap: 10px;
+        grid-row-gap: 35px;
         grid-template-areas:
         "side-two"
         "side-one";
@@ -727,37 +727,56 @@ textarea:focus {
     }
 
     .project-name {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        padding: 0 30px;
     }
     
     .project-idea {
-        font-size: 1.15em;
+        font-size: 1em;
+        padding: 0 30px;
     }
     
     .project-description {
-        font-size: 1.1em;
+        font-size: 1em;
+        padding: 0 30px;
     }
     
     .made-using {
-        font-size: 1.15em;
+        font-size: 1em;
     }
 
     .display {
         grid-template-columns: 100vw;
-        grid-template-rows: 10em 4em;
+        grid-template-rows: auto auto;
         grid-template-areas:
         "gif"
         "buttons";
     }
 
     .gif {
-        height: 10em; /* 16:9 ratio */
-        width: 18em; /* 16:9 ratio */
+        height: 40vw; /* 16:9 ratio */
+        width: 70vw; /* 16:9 ratio */
         justify-self: center;
     }
 
     .buttons {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        height: 2.4em;
+        width: 60vw;
+        padding: 0;
+        margin: 0 0 15px 0;
+        line-height: 2.4em;
+        font-size: 0.8em;
+    }
+
+    .github-logo {
+        height: 1.8em;
+        width: 1.8em;
+        margin: 0 3px 0 0;
     }
 
     .vertical-line {
@@ -780,6 +799,7 @@ textarea:focus {
 
     .card {
         min-height: 85vw;
+        height: auto;
         width: 85vw;
         grid-template-columns: 1fr;
         grid-template-rows: 70px 3px 1fr 3px auto;
