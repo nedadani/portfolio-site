@@ -447,28 +447,37 @@
                             />
                         </a>
                     </div>
-                    <div class="separator"></div>
+                    <div id="separator"></div>
                     <form id="contact-details">
-                        <label class="field-name">To:</label>
-                        <span className="message"
-                            >neda.kinduryte@gmail.com</span
-                        >
-                        <input type="hidden" name="contact_number">
-                        <label class="field-name">Your e-mail:</label>
-                        <input
-                            type="email"
-                            name="user-email"
-                            className="message"
-                        />
-                        <label class="field-name">Your name:</label>
-                        <input
-                            type="text"
-                            name="user-name"
-                            className="message"
-                        />
-                        <label class="field-name">Message:</label>
-                        <textarea className="message" name="message"></textarea>
-                        <input type="submit" value="send" id="send-button" />
+                        <fieldset>
+                            <label class="field-name">To</label>
+                            <span class="text"
+                                >neda.kinduryte@gmail.com</span
+                            >
+                            <input type="hidden" name="contact_number" />
+                            <label class="field-name">Your e-mail:</label>
+                            <input
+                                type="email"
+                                name="user-email"
+                                class="text"
+                            />
+                            <label class="field-name">Your name</label>
+                            <input
+                                type="text"
+                                name="user-name"
+                                class="text"
+                            />
+                            <label class="field-name">Message</label>
+                            <textarea
+                                class="text"
+                                name="message"
+                            ></textarea>
+                            <input
+                                type="submit"
+                                value="send"
+                                id="send-button"
+                            />
+                        </fieldset>
                     </form>
                 </div>
             </div>

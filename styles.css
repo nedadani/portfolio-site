@@ -398,6 +398,7 @@ a {
     height: 600px;
     width: auto;
     background-color: var(--very-light-grey);
+    color: var(--dark-grey);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -410,12 +411,12 @@ a {
     justify-self: center;
     align-self: center;
     display: grid;
-    grid-template-columns: 230px 1fr;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 1fr 3px 2fr;
+    grid-template-rows: 80px 1fr;
+    grid-column-gap: 20px;
     grid-template-areas:
-    "heading heading"
-    "icn contact"
-    "send send";
+    "heading heading heading"
+    "icn separator contact";
 }
 
 #heading {
@@ -443,69 +444,57 @@ a {
     padding: 5px 0;
 }
 
-#contact-details {
-    color: var(--dark-grey);
-    font-size: 0.8em;
-    border-left: 1px solid var(--dark-grey);
-    opacity: 0.8;
-    grid-area: contact;
-    display: grid;
-    grid-template-columns: 100px 300px;
-    grid-template-rows: 1fr 1fr 1fr 100px;
-    grid-column-gap: 20px;
+#separator {
+    background-color: var(--light-grey);
+    height: 90%;
+    width: 1px;
+}
+
+fieldset {
+    height: auto;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .field-name {
-    margin: 0;
-    justify-self: end;
+    padding: 0 0 7px;
     text-transform: uppercase;
+    font-size: 0.9em;
 }
 
-.message {
-    justify-self: start;
-}
-
-input[type=text] {
-    height: 1em;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--grey);
+.text {
+    margin: 0 0 20px;
+    padding: 0 0 5px;
+    font-size: 0.8em;
+    color: var(--dark-grey);
+    width: 90%;
     background-color: var(--very-light-grey);
-    padding: 0 0 5px 0;
     border: none;
-    border-bottom: 1px solid var(--grey);
+    border-bottom: solid 1px var(--light-grey);
 }
 
-input:focus {
-    outline: 0;
+.text:focus {
+    outline: none;
 }
 
 textarea {
-    height: 1em;
-    color: var(--grey);
-    background-color: var(--very-light-grey);
-    padding: 0 0 5px 0;
     resize: none;
-    border: none;
-    border-bottom: 1px solid var(--grey);
-}
-
-textarea:focus {
-    outline: 0;
 }
 
 #send-button {
-    padding: 0;
-    margin: 0 50px;
-    width: 80px;
-    height: 30px;
+    background-color: var(--dark-grey);
+    color: var(--white);
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
-    font-weight: 500;
-    background-color: var(--light-grey);
+    font-size: 1em;
     border: none;
     border-radius: 25px;
-    justify-self: end;
-    grid-area: send;
+    width: 70px;
+}
+
+#send-button:focus {
+    outline: none;
 }
 
 @media only screen and (min-width: 1600px) {
