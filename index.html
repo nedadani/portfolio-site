@@ -10,7 +10,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title></title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
@@ -446,29 +449,34 @@
                     </div>
                     <div class="separator"></div>
                     <form id="contact-details">
-                        <p class="field-name">To:</p>
+                        <label class="field-name">To:</label>
                         <span className="message"
                             >neda.kinduryte@gmail.com</span
                         >
-                        <p class="field-name">Your e-mail:</p>
+                        <input type="hidden" name="contact_number">
+                        <label class="field-name">Your e-mail:</label>
                         <input
-                            type="text"
-                            name="your-email"
+                            type="email"
+                            name="user-email"
                             className="message"
                         />
-                        <p class="field-name">Your name:</p>
+                        <label class="field-name">Your name:</label>
                         <input
                             type="text"
-                            name="your-name"
+                            name="user-name"
                             className="message"
                         />
-                        <p class="field-name">Message:</p>
-                        <textarea className="message"></textarea>
+                        <label class="field-name">Message:</label>
+                        <textarea className="message" name="message"></textarea>
+                        <input type="submit" value="send" id="send-button" />
                     </form>
-                    <button type="button" id="send-button">Send</button>
                 </div>
             </div>
         </div>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+        ></script>
         <script src="./index.js" async defer></script>
         <script src="zenscroll/zenscroll-min.js"></script>
     </body>

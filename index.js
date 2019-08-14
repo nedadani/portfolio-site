@@ -20,3 +20,18 @@ function myFunction() {
     }
 }
 
+//Contact form
+
+(function() {
+    emailjs.init("user_S0B8ciC0SBiJrDpcETzeW");
+})();
+
+window.onload = function() {
+    document
+        .getElementById("contact-details")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            emailjs.sendForm("service_W8xc4BZh", "template_zzS43Ye", "#contact-details");
+        });
+};
