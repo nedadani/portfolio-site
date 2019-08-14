@@ -749,12 +749,15 @@ textarea {
         width: auto;
         border: none;
         grid-template-columns: 80vw;
-        grid-template-rows: 100px auto 50px 100px;
+        grid-template-rows: 100px auto 200px;
         grid-template-areas:
         "heading"
         "contact"
-        "send"
         "icn";
+    }
+
+    #separator {
+        display: none;
     }
 
     #contact-details {
@@ -762,10 +765,6 @@ textarea {
         border: none;
         font-size: 0.8em;
         grid-area: contact;
-        display: grid;
-        grid-template-columns: 91px auto;
-        grid-template-rows: repeat(4, 60px);
-        grid-column-gap: 5px;
     }
 
     .field-name {
@@ -947,14 +946,13 @@ textarea {
 
     #contact {
         height: auto;
-        width: auto;
+        width: 80vw;
         border: none;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px auto 50px 100px;
+        grid-template-rows: 100px auto 100px;
         grid-template-areas:
         "heading"
         "contact"
-        "send"
         "icn";
     }
 
@@ -962,26 +960,12 @@ textarea {
         padding: 0 15px;
         border: none;
         grid-area: contact;
-        display: grid;
-        grid-template-columns: 91px auto;
-        grid-template-rows: repeat(4, 60px);
-        grid-column-gap: 5px;
     }
 
     .field-name {
         margin: 0;
         justify-self: start;
         text-transform: uppercase;
-    }
-
-    #send-button {
-        padding: 0;
-        margin: 0;
-        width: 80vw;
-        height: 40px;
-        font-size: 1em;
-        justify-self: center;
-        align-self: center;
     }
 
     #social-handles {
