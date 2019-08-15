@@ -491,6 +491,7 @@ textarea {
     border: none;
     border-radius: 25px;
     width: 70px;
+    cursor: pointer;
 }
 
 #send-button:focus {
@@ -781,6 +782,7 @@ textarea {
         font-size: 1em;
         justify-self: center;
         align-self: center;
+        margin: auto;
     }
 
     #social-handles {
@@ -966,6 +968,10 @@ textarea {
         margin: 0;
         justify-self: start;
         text-transform: uppercase;
+    }
+
+    #send-button {
+        margin: auto;
     }
 
     #social-handles {
