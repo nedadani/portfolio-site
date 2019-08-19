@@ -231,7 +231,7 @@ a {
     "technologies";
 }
 
-.text {
+.paragraph {
     grid-area: description;
 }
 
@@ -494,7 +494,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     padding: 5px;
-    margin: auto;
+    margin: 50px 0 auto auto;
     border: none;
     border-radius: 25px;
     width: 7em;;
@@ -561,19 +561,19 @@ textarea {
     }
 
     .project-name {
-        font-size: 1.8em;
+        font-size: 2em;
     }
     
     .project-idea {
-        font-size: 1.15em;
+        font-size: 1.3em;
     }
     
     .project-description {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     
     .made-using {
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
     
     .technology-img {
@@ -665,6 +665,10 @@ textarea {
         text-align: center;
     }
 
+    .paragraph {
+        border: none;
+    }
+
     .project-name {
         font-size: 1.7em;
         padding: 0 40px;
@@ -750,14 +754,15 @@ textarea {
     #contact-form {
         height: auto;
         width: 100vw;
+        padding: 50px 0;
     }
 
     #contact {
         height: auto;
-        width: auto;
-        border: none;
+        width: 80vw;
         grid-template-columns: 80vw;
-        grid-template-rows: 100px auto 200px;
+        grid-template-rows: 1fr auto 2fr;
+        grid-row-gap: 30px;
         grid-template-areas:
         "heading"
         "contact"
@@ -769,27 +774,37 @@ textarea {
     }
 
     #contact-details {
+        width: 80vw;
         padding: 0 15px;
-        border: none;
-        font-size: 0.8em;
+        font-size: 1em;
+        margin: auto;
         grid-area: contact;
+    }
+
+    fieldset {
+        margin: 0;
     }
 
     .field-name {
         margin: 0;
+        padding: 0 0 10px;
         justify-self: start;
         text-transform: uppercase;
     }
 
+    .text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8em;
+    }
+
     #send-button {
         padding: 0;
-        margin: 0;
-        width: 50vw;
-        height: 40px;
-        font-size: 1em;
+        width: 30vw;
+        height: 2.2em;
+        font-size: 0.9em;
         justify-self: center;
         align-self: center;
-        margin: auto;
+        margin: 30px auto 0;
     }
 
     #social-handles {
@@ -958,7 +973,7 @@ textarea {
         width: 80vw;
         border: none;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px auto 100px;
+        grid-template-rows: 1fr auto 1fr;
         grid-template-areas:
         "heading"
         "contact"
@@ -974,7 +989,6 @@ textarea {
     .field-name {
         margin: 0;
         justify-self: start;
-        text-transform: uppercase;
     }
 
     #send-button {
