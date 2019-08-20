@@ -219,13 +219,13 @@ a {
 
 .description {
     color: var(--grey);
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'Montserrat', sans-serif;
     justify-content: left;
     align-content: center;
     display: grid;
     grid-template-columns: 25em;
-    grid-template-rows: 14em 4em 4em;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
     "description"
     "made-using"
@@ -250,7 +250,6 @@ a {
 }
 
 .project-description {
-    line-height: 1.45;
     font-size: 1em;
     margin: 0;
 }
