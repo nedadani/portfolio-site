@@ -477,6 +477,7 @@ fieldset {
     background-color: var(--very-light-grey);
     border: none;
     border-bottom: solid 1px var(--light-grey);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .text:focus {
