@@ -583,8 +583,9 @@ textarea {
     }
 
     #certifications {
-        height: 800px;
+        height: 85vh;
         width: auto;
+        padding: 70px 0;
         grid-template-columns: 22em 22em 22em;
         grid-template-rows: 22em 22em;
     }
@@ -622,7 +623,7 @@ textarea {
     }
 
     #contact-form {
-        height: 800px;
+        height: 100vh;
         width: auto;
     }
 
@@ -647,7 +648,7 @@ textarea {
 @media only screen and (max-width: 1080px) {
     .project {
         height: auto;
-        padding: 25px 0;
+        padding: 70px 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
@@ -724,7 +725,7 @@ textarea {
 
     #certifications {
         height: auto;
-        padding: 50px 0;
+        padding: 70px 0;
         width: auto;
         grid-template-columns: 40vw 40vw;
         grid-template-rows: repeat(3, auto);
@@ -774,6 +775,10 @@ textarea {
         display: none;
     }
 
+    #contact-form {
+        height: 80vh;
+    }
+
     #contact-details {
         width: 80vw;
         padding: 0 15px;
@@ -820,9 +825,6 @@ textarea {
 }
 
 @media only screen and (max-width: 576px) {
-    #nav-bar {
-        height: 5.6em;
-    }
 
     .nav-li {
         font-size: 0.9em;
@@ -866,7 +868,7 @@ textarea {
 
     .project {
         height: auto;
-        padding: 25px 0;
+        padding: 70px 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
@@ -948,7 +950,7 @@ textarea {
 
     #certifications {
         height: auto;
-        padding: 50px 0;
+        padding: 70px 0;
         width: auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -965,7 +967,7 @@ textarea {
     }
 
     #contact-form {
-        height: auto;
+        height: 80vh;
         width: 100vw;
     }
 
