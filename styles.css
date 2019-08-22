@@ -535,8 +535,8 @@ textarea {
     }
 
     .icon {
-        height: 2.4em;
-        width: 2.4em;
+        font-size: 2.2em;
+        padding: 0 15px;
     }
 
     .project {
@@ -645,8 +645,8 @@ textarea {
     }
 
     .icn {
-        height: 50px;
-        width: 50px;
+        font-size: 2em;
+        padding: 15px 0;
     }
 
 }
@@ -720,9 +720,8 @@ textarea {
     }
 
     .github-logo {
-        height: 1.8em;
-        width: 1.8em;
-        margin: 0 3px 0 0;
+        font-size: 1.6em;
+        padding: 0 2px 0 0;
     }
 
     .vertical-line {
@@ -824,8 +823,6 @@ textarea {
     }
     
     .icn {
-        height: 40px;
-        width: 40px;
         padding: 0 10px;
     }
 }
@@ -868,8 +865,7 @@ textarea {
     }
 
     .icon {
-        height: 2.4em;
-        width: 2.4em;
+        font-size: 1.7em;
     }
 
     .project {
@@ -941,8 +937,7 @@ textarea {
     }
 
     .github-logo {
-        height: 1.8em;
-        width: 1.8em;
+        font-size: 1.6em;
         margin: 0 3px 0 0;
     }
 
@@ -1009,8 +1004,7 @@ textarea {
     }
     
     .icn {
-        height: 40px;
-        width: 40px;
+        font-size: 1.8em;
         padding: 0 10px;
     }
 
