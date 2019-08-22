@@ -14,6 +14,7 @@
     --light-grey: #C9C9C9;
     --grey: #808080;
     --dark-grey: #3D3D3D;
+    --blue: #3498db;
 }
 
 body {
@@ -129,9 +130,14 @@ a {
 }
 
 .icon {
-    height: 1.7em;
-    width: 1.7em;
-    padding: 0 2px;
+    font-size: 1.6em;
+    color: var(--white);
+    opacity: 0.7;
+    padding: 0 8px;
+}
+
+.icon:hover {
+    color: var(--blue);
 }
 
 #projects {
@@ -200,9 +206,9 @@ a {
 }
 
 .github-logo {
-    height: 2em;
-    width: 2em;
-    vertical-align: middle;
+    font-size: 1.5em;
+    color: var(--grey);
+    padding: 2px;
 }
 
 .vertical-line {
@@ -443,9 +449,9 @@ a {
 }
 
 .icn {
-    height: 40px;
-    width: 40px;
-    padding: 5px 0;
+    font-size: 2em;
+    color: var(--grey);
+    padding: 12px 0;
 }
 
 #separator {
