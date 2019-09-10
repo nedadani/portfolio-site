@@ -293,8 +293,8 @@ a {
     display: grid;
     grid-template-columns: 20em 20em 20em;
     grid-template-rows: 20em 20em;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
 .card {
@@ -721,7 +721,6 @@ textarea {
         width: auto;
         grid-template-columns: 40vw 40vw;
         grid-template-rows: repeat(3, auto);
-        grid-column-gap: 20px;
     }
 
     .card {
