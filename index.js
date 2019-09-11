@@ -36,6 +36,29 @@ window.addEventListener('scroll', function(event) { // To listen for event
     }
 });
 
+//Underline nav bar element when active
+
+var items = document.getElementsByClassName('nav-li');
+var activeClassName = 'active';
+
+function unselectItems() {
+  for (var i = 0; i < items.length; i++) {  
+    items[i].classList.remove(activeClassName);
+  }
+}
+
+function selectItem(item) {
+  unselectItems();
+  item.classList.add(activeClassName);
+}
+
+function onItemClick(event) {
+  selectItem(event.target);
+}
+
+for (var i = 0; i < items.length; i++) {  
+  items[i].addEventListener('click', onItemClick);
+}
 
 //Contact form
 
