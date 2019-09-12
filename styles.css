@@ -512,6 +512,11 @@ textarea:focus {
     margin: 0 0 0 auto;
 }
 
+#send-button:disabled {
+    opacity: 0.8;
+    cursor: default;
+}
+
 #social-handles {
     grid-area: icn;
     margin: auto;

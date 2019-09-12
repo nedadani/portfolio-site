@@ -36,6 +36,7 @@ window.addEventListener('scroll', function(event) { // To listen for event
     }
 });
 
+
 //Underline nav bar element when active
 
 var items = document.getElementsByClassName('nav-li');
@@ -60,6 +61,7 @@ for (var i = 0; i < items.length; i++) {
   items[i].addEventListener('click', onItemClick);
 }
 
+
 //Contact form
 
 (function() {
@@ -77,8 +79,12 @@ window.onload = function() {
 };
 
 function resetForm() {
+    var btn = document.getElementById("send-button");
+
     document.addEventListener("submit", function() {
         document.getElementById("contact-details").reset();
     });
-};
 
+    btn.innerHTML = "Sent!";
+    btn.setAttribute("disabled", "");
+};
