@@ -405,23 +405,26 @@
                             <span class="text"
                                 >neda.kinduryte@gmail.com</span
                             >
-                            <input type="hidden" name="contact_number" />
+                            <input type="hidden" name="contact_number" required/>
                             <label class="field-name">Your e-mail:</label>
                             <input
                                 type="email"
                                 name="user-email"
                                 class="text"
+                                required
                             />
                             <label class="field-name">Your name</label>
                             <input
                                 type="text"
                                 name="user-name"
                                 class="text"
+                                required
                             />
                             <label class="field-name">Message</label>
                             <textarea
                                 name="message"
                             ></textarea>
+                            <span id="note">Note: Please fill in all the fields above.</span>
                             <button type="submit" value="send" id="send-button" class="button">Send</button>
                         </fieldset>
                     </form>

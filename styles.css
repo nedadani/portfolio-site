@@ -504,6 +504,10 @@ textarea:focus {
     outline: none;
 }
 
+#note {
+    font-size: 0.9em;
+}
+
 #send-button {
     margin: 0 0 0 auto;
 }
