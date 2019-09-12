@@ -75,3 +75,10 @@ window.onload = function() {
             emailjs.sendForm("service_W8xc4BZh", "template_zzS43Ye", "#contact-details");
         });
 };
+
+function resetForm() {
+    document.addEventListener("submit", function() {
+        document.getElementById("contact-details").reset();
+    });
+};
+
