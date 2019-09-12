@@ -640,12 +640,12 @@ textarea:focus {
 
     #contact-form {
         height: auto;
-        width: auto;
+        width: 100%;
     }
 
     #contact {
         height: auto;
-        width: 80%;
+        width: 800px;
     }
 
     .text {
