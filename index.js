@@ -55,8 +55,10 @@ function getElement(classification) {
 
 function getSectionStart() {
     let start = getElementHeight("hero");
+    let navHeight = getElementHeight("nav-bar");
+
     for(let i = 0; i < sections.length; i++) {
-        sections[i].start = start;
+        sections[i].start = start - navHeight;
         start += getElementHeight(sections[i].identifier);
     }
 }
@@ -77,10 +79,12 @@ window.addEventListener("scroll", function(event) {
         if (getElementHeight("hero") >= scrollPosition) {
             removeClass(sections[active].classification);
         } else if (scrollPosition > sections[i].start) {
-            if (active !== -1) {
+            if (active === sections[i]) {
+                break;
+            } else if (active !== -1) {
                 removeClass(sections[active].classification);
             } 
-            
+
             let element = getElement(sections[i].classification)
             element.classList.add("active");
             active = i;
