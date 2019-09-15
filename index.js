@@ -36,32 +36,61 @@ window.addEventListener("scroll", function(event) {
     }
 });
 
+
 //Underline nav bar element when active
 
-// const items = document.getElementsByClassName('nav-li');
-// const activeClassName = 'active';
+const sections = [
+    { identifier: "projects", classification: "projects-li", start: 0 },
+    { identifier: "certifications", classification: "certificates-li", start: 0 },
+    { identifier: "contact-form", classification: "contact-li", start: 0 }
+];
 
-// function unselectItems() {
-//   for (let i = 0; i < items.length; i++) {
-//     items[i].classList.remove(activeClassName);
-//   }
-// }
+function getElementHeight(identifier) {
+    return document.getElementById(identifier).clientHeight;
+}
 
-// function selectItem(item) {
-//   unselectItems();
-//   item.classList.add(activeClassName);
-// }
+function getElement(classification) {
+    return document.getElementById(classification);
+}
 
-// function onItemClick(event) {
-//   selectItem(event.target);
-// }
+function getSectionStart() {
+    let start = getElementHeight("hero");
+    for(let i = 0; i < sections.length; i++) {
+        sections[i].start = start;
+        start += getElementHeight(sections[i].identifier);
+    }
+}
 
-// for (let i = 0; i < items.length; i++) {
-//   items[i].addEventListener('click', onItemClick);
-// }
+function removeClass(element) {
+    getElement(element).classList.remove("active");
+}
+
+let active = -1;
+
+window.addEventListener("scroll", function(event) {
+    event.preventDefault();
+    
+    getSectionStart();
+    let scrollPosition = document.documentElement.scrollTop;
+
+    for(let i = sections.length - 1; i >= 0; i--) {
+        if (getElementHeight("hero") >= scrollPosition) {
+            removeClass(sections[active].classification);
+        } else if (scrollPosition > sections[i].start) {
+            if (active !== -1) {
+                removeClass(sections[active].classification);
+            } 
+            
+            let element = getElement(sections[i].classification)
+            element.classList.add("active");
+            active = i;
+            break;
+        }
+    }
+});
 
 
-    //Contact form
+//Contact form
 
 (function() {
     emailjs.init("user_S0B8ciC0SBiJrDpcETzeW");
