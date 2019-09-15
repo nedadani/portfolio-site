@@ -173,17 +173,19 @@ i:hover {
     grid-template-columns: 25em;
     grid-template-rows: 14em 4em;
     grid-template-areas:
-    "gif"
+    "video"
     "buttons";
 }
 
-.gif {
+.video {
     height: 14em; /* 16:9 ratio */
     width: 25em; /* 16:9 ratio */
     border: 1px solid var(--white);
-    opacity: 0.8;
-    background-color: var(--dark-grey);
-    grid-area: gif;
+    grid-area: video;
+}
+
+video:focus {
+    outline: none;
 }
 
 .buttons {
@@ -569,7 +571,7 @@ textarea:focus {
         grid-template-rows: 17em 4em;
     }
 
-    .gif {
+    .video {
         height: 17em; /* 16:9 ratio */
         width: 30em; /* 16:9 ratio */
     }
@@ -730,11 +732,11 @@ textarea:focus {
         grid-template-columns: 100vw;
         grid-template-rows: auto auto;
         grid-template-areas:
-        "gif"
+        "video"
         "buttons";
     }
 
-    .gif {
+    .video {
         height: 40vw; /* 16:9 ratio */
         width: 70vw; /* 16:9 ratio */
         justify-self: center;
@@ -897,11 +899,11 @@ textarea:focus {
         grid-template-columns: 100vw;
         grid-template-rows: auto auto;
         grid-template-areas:
-        "gif"
+        "video"
         "buttons";
     }
 
-    .gif {
+    .video {
         height: 40vw; /* 16:9 ratio */
         width: 70vw; /* 16:9 ratio */
         justify-self: center;
