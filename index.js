@@ -83,8 +83,6 @@ window.addEventListener("scroll", function(event) {
         if (getElementHeight("hero") >= scrollPosition) {
             removeClass();
         } else if (scrollPosition > sections[i].start) { 
-            console.log(scrollPosition, i, active);
-            
             removeClass();
             getElement(sections[i].classification).classList.add("active");
             active = i;
