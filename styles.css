@@ -46,6 +46,10 @@ body {
     padding: 0 15px;
 }
 
+.nav-li:hover {
+    color: var(--blue);
+}
+
 .active {
     text-decoration: underline;
 }
@@ -147,12 +151,13 @@ i:hover {
 #projects {
     height: auto;
     width: auto;
+    padding: 4em 0;
+    background-color: var(--very-light-grey);
 }
 
 .project {
     height: 600px;
     width: auto;
-    background-color: var(--very-light-grey);
     display: grid;
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1px 1fr;
@@ -292,6 +297,7 @@ i:hover {
 #certifications {
     height: 800px;
     width: auto;
+    padding: 4em 0;
     justify-content: center;
     align-content: center;
     display: grid;
@@ -417,7 +423,7 @@ i:hover {
 #contact-form {
     height: 100vh;
     width: auto;
-    padding: 40px 0;
+    padding: 4.3em 0;
     background-color: var(--very-light-grey);
     color: var(--dark-grey);
     display: grid;
