@@ -63,13 +63,17 @@ function getSectionStart() {
     }
 }
 
-function removeClass(element) {
-    getElement(element).classList.remove("active");
-}
-
 let active = -1;
 
+function removeClass() {
+    if (active !== -1) {
+        getElement(sections[active].classification).classList.remove("active");
+        active = -1;
+    }
+}
+
 window.addEventListener("scroll", function(event) {
+    
     event.preventDefault();
     
     getSectionStart();
@@ -77,16 +81,12 @@ window.addEventListener("scroll", function(event) {
 
     for(let i = sections.length - 1; i >= 0; i--) {
         if (getElementHeight("hero") >= scrollPosition) {
-            removeClass(sections[active].classification);
-        } else if (scrollPosition > sections[i].start) {
-            if (active === sections[i]) {
-                break;
-            } else if (active !== -1) {
-                removeClass(sections[active].classification);
-            } 
-
-            let element = getElement(sections[i].classification)
-            element.classList.add("active");
+            removeClass();
+        } else if (scrollPosition > sections[i].start) { 
+            console.log(scrollPosition, i, active);
+            
+            removeClass();
+            getElement(sections[i].classification).classList.add("active");
             active = i;
             break;
         }
