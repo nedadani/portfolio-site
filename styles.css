@@ -311,7 +311,7 @@ video:focus {
 .card {
     height: 20em;
     width: 20em;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--light-grey);
     font-family: 'Montserrat', sans-serif;
     color: var(grey);
     justify-self: center;
