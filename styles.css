@@ -14,7 +14,7 @@
     --light-grey: #C9C9C9;
     --grey: #808080;
     --dark-grey: #3D3D3D;
-    --blue: #3498db;
+    --blue: #0A3D62;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 }
 
 .nav-li:hover {
-    color: var(--blue);
+    color: var(--light-grey);
 }
 
 .active {
@@ -144,8 +144,8 @@ a {
     padding: 0 8px;
 }
 
-i:hover {
-    color: var(--blue);
+.icon:hover {
+    color: var(--light-grey);
 }
 
 #projects {
@@ -358,6 +358,10 @@ video:focus {
     margin: 0;
 }
 
+.certificate-name:hover {
+    color: #000000;
+}
+
 .certificate-link {
     color: var(--grey);
     justify-self: left;
@@ -533,6 +537,10 @@ textarea:focus {
     font-size: 2em;
     color: var(--grey);
     padding: 0 10px;
+}
+
+.icn-bottom:hover {
+    color: var(--blue);
 }
 
 @media only screen and (min-width: 1600px) {
