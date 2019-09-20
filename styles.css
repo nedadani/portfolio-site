@@ -80,6 +80,7 @@ body {
         url("resources/hero-image-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--dark-grey);
 }
 
 #header {
