@@ -624,7 +624,6 @@ textarea:focus {
     }
 
     #certifications {
-        height: 85vh;
         width: auto;
         padding: 70px 0;
         grid-template-columns: 22em 22em 22em;
