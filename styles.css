@@ -76,7 +76,7 @@ body {
     height: 100vh;
     width: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("resources/hero-image-desktop.jpg");
+        url("resources/hero-images/hero-image-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--dark-grey);
@@ -154,11 +154,11 @@ a {
 
 #projects {
     background-color: var(--very-light-grey);
+    padding: 1.5em 0;
 }
 
 .project {
-    height: 37em;
-    width: auto;
+    padding: 2.5em 0;
     display: grid;
     grid-column-gap: 2.5em;
     grid-template-columns: 1fr 1px 1fr;
@@ -229,7 +229,7 @@ video:focus {
 .vertical-line {
     background-color: var(--grey);
     opacity: 0.3;
-    height: 25em;
+    height: 20em;
     align-self: center;
 }
 
@@ -548,12 +548,11 @@ textarea:focus {
 
     #hero {
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-            url("resources/hero-image-mobile.jpg");
+            url("resources/hero-images/hero-image-mobile.jpg");
     }
 
     .project {
         height: auto;
-        padding: 5em 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
