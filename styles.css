@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
 
 @font-face {
-    font-family: 'aileronsregular';
-    src: url('resources/webfontkit/ailerons-regular-webfont.woff2') format('woff2'),
-         url('resources/webfontkit/ailerons-regular-webfont.woff') format('woff');
+    font-family: "aileronsregular";
+    src: url("resources/webfontkit/ailerons-regular-webfont.woff2")
+            format("woff2"),
+        url("resources/webfontkit/ailerons-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
     --white: #fff;
-    --very-light-grey: #F5F5F5;
-    --light-grey: #C9C9C9;
+    --very-light-grey: #f5f5f5;
+    --light-grey: #c9c9c9;
     --grey: #808080;
-    --dark-grey: #3D3D3D;
-    --blue: #0A3D62;
+    --dark-grey: #3d3d3d;
+    --blue: #0a3d62;
 }
 
 body {
     margin: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
 
 #nav-bar {
@@ -38,13 +41,13 @@ body {
 }
 
 .nav-li {
-    font-family: 'aileronsregular';
+    font-family: "aileronsregular";
     font-size: 1.1em;
     color: var(--white);
     opacity: 0.8;
     display: inline;
-    margin: 0 15px;
-    padding: 3px 0;
+    margin: 0 1em;
+    padding: 0.2em 0;
 }
 
 .nav-li:hover {
@@ -67,16 +70,12 @@ body {
 
 .sticky + #header {
     padding-top: 4em;
-  }
+}
 
 #hero {
     height: 100vh;
     width: auto;
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.45), 
-            rgba(0, 0, 0, 0.45)
-        ),
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url("resources/hero-image-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,9 +95,9 @@ body {
     grid-template-columns: 20em;
     grid-template-rows: 20em 4em 4em;
     grid-template-areas:
-    "name"
-    "title"
-    "icons";
+        "name"
+        "title"
+        "icons";
 }
 
 #rectangle {
@@ -114,14 +113,13 @@ body {
 }
 
 #name {
-    font-family: 'aileronsregular';
+    font-family: "aileronsregular";
     color: var(--light-grey);
     font-size: 8em;
     margin: 0;
 }
 
 #title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1em;
     text-transform: uppercase;
@@ -147,7 +145,7 @@ a {
     font-size: 1.6em;
     color: var(--white);
     opacity: 0.7;
-    padding: 0 8px;
+    padding: 0 0.5em;
 }
 
 .icon:hover {
@@ -155,20 +153,17 @@ a {
 }
 
 #projects {
-    height: auto;
-    width: auto;
     background-color: var(--very-light-grey);
 }
 
 .project {
-    height: 600px;
+    height: 37em;
     width: auto;
     display: grid;
-    grid-column-gap: 40px;
+    grid-column-gap: 2.5em;
     grid-template-columns: 1fr 1px 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-    "side-one line side-two";
+    grid-template-areas: "side-one line side-two";
 }
 
 .display {
@@ -179,8 +174,8 @@ a {
     grid-template-columns: 25em;
     grid-template-rows: 14em 4em;
     grid-template-areas:
-    "video"
-    "buttons";
+        "video"
+        "buttons";
 }
 
 .video {
@@ -195,30 +190,28 @@ video:focus {
 }
 
 .buttons {
-    margin: 20px 0 0;
+    margin: 1.25em 0 0;
     grid-area: buttons;
     justify-self: center;
     align-self: center;
 }
 
 .button {
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--blue);
+    font-family: "Montserrat", sans-serif;
     border: none;
     color: var(--white);
-    width: 155px;
-    height: 40px;
+    width: 9.7em;
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0 4px;
-    padding: 0;
+    font-size: 0.8em;
+    margin: 0 0.25em;
+    padding: 1em 0;
     opacity: 0.8;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
 }
-  
+
 .button:hover {
     opacity: 1;
 }
@@ -228,15 +221,15 @@ video:focus {
 }
 
 .github-logo {
-    font-size: 18px;;
+    font-size: 1.1em;
     color: var(--white);
-    padding: 0 2px 0 0;
+    padding: 0 0.15em 0 0;
 }
 
 .vertical-line {
     background-color: var(--grey);
     opacity: 0.3;
-    height: 400px;
+    height: 25em;
     align-self: center;
 }
 
@@ -248,16 +241,15 @@ video:focus {
 .description {
     color: var(--grey);
     font-size: 0.9em;
-    font-family: 'Montserrat', sans-serif;
     justify-content: left;
     align-content: center;
     display: grid;
     grid-template-columns: 25em;
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
-    "description"
-    "made-using"
-    "technologies";
+        "description"
+        "made-using"
+        "technologies";
 }
 
 .paragraph {
@@ -287,7 +279,6 @@ video:focus {
     opacity: 0.7;
     font-size: 1em;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
     grid-area: made-using;
 }
 
@@ -296,58 +287,55 @@ video:focus {
 }
 
 .technology-img {
-    height: 50px;
-    width: 50px;
-    margin: 0 10px 0 0;
+    height: 3em;
+    width: 3em;
+    margin: 0 0.7em 0 0;
 }
 
 #certifications {
-    height: 800px;
-    width: auto;
-    padding: 2em 0;
+    padding: 4em 0;
     justify-content: center;
     align-content: center;
     display: grid;
     grid-template-columns: 20em 20em 20em;
     grid-template-rows: 20em 20em;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
 }
 
 .card {
     height: 20em;
     width: 20em;
     border: 1px solid var(--light-grey);
-    font-family: 'Montserrat', sans-serif;
     color: var(grey);
     justify-self: center;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4.5em 3px 1fr 3px auto;
+    grid-template-rows: 4.5em 0.2em 1fr 0.2em auto;
     grid-template-areas:
-    "top"
-    "dicider"
-    "middle"
-    "divider"
-    "bottom";
+        "top"
+        "dicider"
+        "middle"
+        "divider"
+        "bottom";
 }
 
 .top {
-    padding: 10px 10px;
+    padding: 0.7em 0.7em;
     grid-area: top;
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 3em 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 10px;
+    grid-column-gap: 0.7em;
     grid-template-areas:
-    "image name"
-    "image date";
+        "image name"
+        "image date";
 }
 
 .website-logo {
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
 }
 
 .website-link {
@@ -387,31 +375,31 @@ video:focus {
 .middle {
     color: var(--dark-grey);
     grid-area: middle;
-    padding: 10px 15px;
+    padding: 0.625em 0.9em;
     margin: 0;
 }
 
 .middle li {
     list-style-type: none;
     font-size: 0.8em;
-    padding: 5px 0;
+    padding: 0.3em 0;
 }
 
 .bottom {
     margin: 0;
-    padding: 10px 15px;
+    padding: 0.5em 0.9em;
     grid-area: bottom;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 5px;
+    grid-column-gap: 0.3em;
 }
 
 .bottom li {
     color: var(--dark-grey);
     list-style-type: none;
     font-size: 0.8em;
-    padding: 5px 0;
+    padding: 0.3em 0;
 }
 
 .project-link {
@@ -432,8 +420,6 @@ video:focus {
 }
 
 #contact-form {
-    height: 100vh;
-    width: auto;
     padding: 3.5em 0;
     background-color: var(--very-light-grey);
     color: var(--dark-grey);
@@ -443,18 +429,16 @@ video:focus {
 }
 
 #contact {
-    height: auto;
-    width: 45em;;
-    font-family: 'Montserrat', sans-serif;
+    width: 45em;
     justify-self: center;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 5em 1fr 5em;
     grid-template-areas:
-    "heading"
-    "contact"
-    "icn";
+        "heading"
+        "contact"
+        "icn";
 }
 
 #heading {
@@ -469,33 +453,30 @@ video:focus {
 }
 
 fieldset {
-    height: auto;
     width: 100%;
     padding: 0;
     margin: 0;
     border: none;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     grid-area: contact;
 }
 
 .field-name {
-    padding: 0 0 10px;
+    padding: 0 0 0.6em;
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
 .text {
-    margin: 0 0 20px;
-    padding: 0 0 5px;
-    font-size: 0.7em;
+    margin: 0 0 1.25em;
+    padding: 0 0 0.3em;
+    font-size: 0.9em;
     color: var(--dark-grey);
     width: 100%;
     background-color: var(--very-light-grey);
     border: none;
     border-bottom: solid 1px var(--light-grey);
-    font-family: 'Montserrat', sans-serif;
 }
 
 .text:focus {
@@ -503,18 +484,16 @@ fieldset {
 }
 
 textarea {
-    margin: 0 0 20px;
-    padding: 10px;
-    font-size: 0.7em;
+    margin: 0 0 0.3em;
+    padding: 0.5em;
+    font-size: 0.9em;
     background-color: var(--very-light-grey);
     box-sizing: border-box;
     width: 100%;
-    height: 15em;;
+    height: 15em;
     border: solid 1px var(--light-grey);
     resize: none;
-    font-family: 'Montserrat', sans-serif;
     color: var(--dark-grey);
-    font-size: 0.7em;
 }
 
 textarea:focus {
@@ -522,7 +501,8 @@ textarea:focus {
 }
 
 #note {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding: 0.8em 0;
 }
 
 #send-button {
@@ -549,165 +529,39 @@ textarea:focus {
     color: var(--blue);
 }
 
-@media only screen and (min-width: 1600px) {
-    #nav-bar {
-        height: 5.6em;
-    }
-
-    .nav-li {
-        font-size: 1.5em;
-    }
-
-    #rectangle {
-        height: 28em;
-        width: 28em;
-    }
-
-    #name {
-        font-size: 11em;
-    }
-
-    #title {
-        font-size: 1.5em;
-    }
-
-    .icon {
-        font-size: 2.2em;
-        padding: 0 15px;
-    }
-
-    .project {
-        grid-column-gap: 50px;
-    }
-
-    .display {
-        grid-template-columns: 30em;
-        grid-template-rows: 17em 4em;
-    }
-
-    .video {
-        height: 17em; /* 16:9 ratio */
-        width: 30em; /* 16:9 ratio */
-    }
-
-    .button {
-        width: 170px;
-        height: 48px;
-    }
-
-    .vertical-line {
-        height: 500px;
-    }
-
-    .description {
-        grid-template-columns: 30em;
-    }
-
-    .project-name {
-        font-size: 2em;
-    }
-    
-    .project-idea {
-        font-size: 1.3em;
-    }
-    
-    .project-description {
-        font-size: 1.2em;
-    }
-    
-    .made-using {
-        font-size: 1.1em;
-    }
-    
-    .technology-img {
-        height: 55px;
-        width: 55px;
-    }
-
-    #certifications {
-        width: auto;
-        padding: 70px 0;
-        grid-template-columns: 22em 22em 22em;
-        grid-template-rows: 22em 22em;
-    }
-
-    .card {
-        height: 22em;
-        width: 22em;
-        grid-template-rows: 80px 3px 1fr 3px auto;
-    }
-
-    .top {
-        padding: 10px 10px;
-        grid-template-columns: 55px 1fr;
-    }
-    
-    .website-logo {
-        width: 55px;
-        height: 55px;
-    }
-
-    .certificate-name {
-        font-size: 1.1em;
-    }
-
-    .certificate-date {
-        font-size: 1em;
-    }
-
-    .middle li {
-        font-size: 0.88em;
-    }
-
-    .bottom li {
-        font-size: 0.88em;
-    }
-
-    #contact-form {
-        height: auto;
-        width: 100%;
-    }
-
-    #contact {
-        height: auto;
-        width: 800px;
-    }
-
-    .text {
-        margin: 0 0 30px;
-    }
-
-    textarea {
-        margin: 0 0 30px;
-    }
-
-    #send-button {
+@media (min-width: 1600px) {
+    body {
         font-size: 18px;
     }
-
-    #heading {
-        font-size: 1.6em;
-    }
-
-    .icn {
-        font-size: 2em;
-        padding: 0 10px;
-    }
-
 }
 
-@media only screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    #hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("resources/hero-image-mobile.jpg");
+    }
+
     .project {
         height: auto;
-        padding: 70px 0;
+        padding: 5em 0;
         display: grid;
         grid-column-gap: 0;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        grid-row-gap: 35px;
+        grid-row-gap: 3em;
         grid-template-areas:
-        "side-two"
-        "side-one";
+            "side-two"
+            "side-one";
     }
 
     .description {
@@ -719,206 +573,20 @@ textarea:focus {
     }
 
     .paragraph {
-        border: none;
-    }
-
-    .project-name {
-        font-size: 1.7em;
-        padding: 0 40px;
-    }
-    
-    .project-idea {
-        font-size: 1.1em;
-        padding: 0 40px;
-    }
-    
-    .project-description {
-        font-size: 1.1em;
-        padding: 0 40px;
-    }
-    
-    .made-using {
-        font-size: 1.1em;
+        padding: 0 2.5em;
     }
 
     .display {
         grid-template-columns: 100vw;
         grid-template-rows: auto auto;
         grid-template-areas:
-        "video"
-        "buttons";
+            "video"
+            "buttons";
     }
 
     .video {
-        height: 40vw; /* 16:9 ratio */
-        width: 70vw; /* 16:9 ratio */
-        justify-self: center;
-    }
-
-    .button {
-        width: 190px;
-        height: 46px;
-        line-height: 22px;
-    }
-
-    .github-logo {
-        padding: 0 2px 0 0;
-    }
-
-    .vertical-line {
-        display: none;
-    }
-
-    #certifications {
-        height: auto;
-        padding: 70px 0;
-        width: auto;
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .card {
-        min-height: 40vw;
-        height: 100%;
-        width: 100%;
-        grid-template-rows: 90px 3px auto 3px auto;
-    }
-
-    .website-logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .middle li {
-        font-size: 0.9em;
-        padding: 5px 0;
-    }
-    
-    .bottom li {
-        font-size: 0.9em;
-    }
-
-    #contact-form {
-        height: auto;
-        width: 100vw;
-        padding: 50px 0;
-    }
-
-    #contact {
-        height: auto;
-        width: 70vw;
-    }
-
-    #contact-details {
-        font-size: 1em;
-    }
-
-    .text {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.8em;
-    }
-
-    #send-button {
-        padding: 0;
-        width: 30vw;
-        height: 2.3em;
-        font-size: 0.9em;
-        margin: 30px auto 10px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-    .nav-li {
-        font-size: 0.9em;
-    }
-
-    #hero {
-        background:
-            linear-gradient(
-                rgba(0, 0, 0, 0.45), 
-                rgba(0, 0, 0, 0.45)
-            ),
-            url("resources/hero-image-mobile.jpg");
-    }
-
-    #main {
-        grid-template-columns: 100vw;
-        grid-template-rows: 18em 4em 4em;
-        grid-template-areas:
-        "name"
-        "title"
-        "icons";
-    }
-
-    #rectangle {
-        height: 18em;
-        width: 18em;
-    }
-
-    #name {
-        font-size: 8em;
-    }
-
-    #title {
-        font-size: 1.2em;
-    }
-
-    .icon {
-        font-size: 1.7em;
-    }
-
-    .project {
-        height: auto;
-        padding: 70px 0;
-        display: grid;
-        grid-column-gap: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-row-gap: 35px;
-        grid-template-areas:
-        "side-two"
-        "side-one";
-    }
-
-    .description {
-        grid-template-columns: 100vw;
-        grid-template-rows: auto auto auto;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .project-name {
-        font-size: 1.5em;
-        padding: 0 30px;
-    }
-    
-    .project-idea {
-        font-size: 1em;
-        padding: 0 30px;
-    }
-    
-    .project-description {
-        font-size: 1em;
-        padding: 0 30px;
-    }
-    
-    .made-using {
-        font-size: 1em;
-    }
-
-    .display {
-        grid-template-columns: 100vw;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "video"
-        "buttons";
-    }
-
-    .video {
-        height: 40vw; /* 16:9 ratio */
-        width: 70vw; /* 16:9 ratio */
+        height: 45vw; /* 16:9 ratio */
+        width: 80vw; /* 16:9 ratio */
         justify-self: center;
     }
 
@@ -928,30 +596,19 @@ textarea:focus {
     }
 
     .button {
-        height: 35px;
+        height: 2.9em;
         width: 55vw;
         padding: 0;
         margin: 0 0 15px 0;
-        line-height: 20px;
-        font-size: 14px;
-    }
-
-    .github-logo {
-        margin: 0 3px 0 0;
+        font-size: 1em;
     }
 
     .vertical-line {
         display: none;
     }
 
-    .description {
-        grid-template-columns: 100vw;
-    }
-
     #certifications {
-        height: auto;
-        padding: 70px 0;
-        width: auto;
+        padding: 5em 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
@@ -960,25 +617,28 @@ textarea:focus {
 
     .card {
         min-height: 85vw;
-        height: auto;
+        font-size: 14px;
         width: 85vw;
         grid-template-columns: 1fr;
-        grid-template-rows: 70px 3px 1fr 3px auto;
+        grid-template-rows: 5.5em 0.3em 1fr 0.3em auto;
     }
 
     #contact-form {
-
-        padding: 50px 0;
+        padding: 3em 0;
     }
 
     #contact {
-        height: auto;
+        padding: 0;
         width: 80vw;
         border: none;
     }
 
-    #send-button {
-        width: 60vw;
+    #note {
+        padding: 1em 0 3em;
     }
 
+    #send-button {
+        width: 60vw;
+        margin: 0 auto 2em;
+    }
 }
