@@ -543,12 +543,24 @@ textarea:focus {
 
 @media (max-width: 576px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     #hero {
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
             url("resources/hero-images/hero-image-mobile.jpg");
+    }
+
+    .nav-li {
+        font-family: "aileronsregular";
+        font-size: 1.1em;
+        margin: 0 0.1em;
+        padding: 0.2em 0;
+    }
+
+    #rectangle {
+        height: 85vw;
+        width: 85vw;
     }
 
     .project {
@@ -569,6 +581,11 @@ textarea:focus {
         justify-items: center;
         align-items: center;
         text-align: center;
+    }
+
+    .project-description {
+        font-size: 1.15em;
+        margin: 0;
     }
 
     .paragraph {
@@ -615,11 +632,19 @@ textarea:focus {
     }
 
     .card {
-        min-height: 85vw;
-        font-size: 14px;
+        min-height: 50vw;
+        height: auto;
         width: 85vw;
         grid-template-columns: 1fr;
         grid-template-rows: 5.5em 0.3em 1fr 0.3em auto;
+    }
+
+    .middle li {
+        font-size: 0.9em;
+    }
+
+    .bottom li {
+        font-size: 0.9em;
     }
 
     #contact-form {
