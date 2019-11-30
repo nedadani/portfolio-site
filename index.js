@@ -1,21 +1,22 @@
 //Sticky nav
 
 window.onscroll = function() {
-    myFunction();
+    stickyNav();
 };
 
 const navbar = document.getElementById("nav-bar");
 
 const sticky = navbar.offsetTop;
 
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
+function stickyNav() {
+    if (screen.width > 576) {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
     }
 }
-
 
 //Change navbar color on scroll
 
@@ -25,20 +26,25 @@ window.addEventListener("scroll", function(event) {
     // To listen for event
     event.preventDefault();
 
-    if (window.scrollY >= 20) {
-        nav.style.backgroundColor = "#1B2D32";
-        nav.style.transition = "300ms";
-    } else {
-        nav.style.backgroundColor = "transparent";
+    if (screen.width > 576) {
+        if (window.scrollY >= 20) {
+            nav.style.backgroundColor = "#1B2D32";
+            nav.style.transition = "300ms";
+        } else {
+            nav.style.backgroundColor = "transparent";
+        }
     }
 });
-
 
 //Underline nav bar element when active
 
 const sections = [
     { identifier: "projects", classification: "projects-li", start: 0 },
-    { identifier: "certifications", classification: "certificates-li", start: 0 },
+    {
+        identifier: "certifications",
+        classification: "certificates-li",
+        start: 0
+    },
     { identifier: "contact-form", classification: "contact-li", start: 0 }
 ];
 
@@ -54,7 +60,7 @@ function getSectionStart() {
     let start = getElementHeight("hero");
     let navHeight = getElementHeight("nav-bar");
 
-    for(let i = 0; i < sections.length; i++) {
+    for (let i = 0; i < sections.length; i++) {
         sections[i].start = start - navHeight;
         start += getElementHeight(sections[i].identifier);
     }
@@ -70,16 +76,15 @@ function removeClass() {
 }
 
 window.addEventListener("scroll", function(event) {
-    
     event.preventDefault();
-    
+
     getSectionStart();
     let scrollPosition = document.documentElement.scrollTop;
 
-    for(let i = sections.length - 1; i >= 0; i--) {
+    for (let i = sections.length - 1; i >= 0; i--) {
         if (getElementHeight("hero") >= scrollPosition) {
             removeClass();
-        } else if (scrollPosition > sections[i].start) { 
+        } else if (scrollPosition > sections[i].start) {
             removeClass();
             getElement(sections[i].classification).classList.add("active");
             active = i;
@@ -87,7 +92,6 @@ window.addEventListener("scroll", function(event) {
         }
     }
 });
-
 
 //Contact form
 

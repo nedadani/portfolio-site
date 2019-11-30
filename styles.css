@@ -35,9 +35,13 @@ body {
     z-index: 2;
 }
 
+.toggler {
+    visibility: hidden;
+}
+
 #nav-ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 2em 0 0;
 }
 
 .nav-li {
@@ -551,11 +555,100 @@ textarea:focus {
             url("resources/hero-images/hero-image-mobile.jpg");
     }
 
-    .nav-li {
-        font-family: "aileronsregular";
-        font-size: 1.1em;
-        margin: 0 0.1em;
-        padding: 0.2em 0;
+    #nav-bar {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .toggler {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        z-index: 2;
+        cursor: pointer;
+        height: 2em;
+        width: 2em;
+        visibility: visible;
+        opacity: 0;
+    }
+
+    #nav-bar .hamburger {
+        position: absolute;
+        top: 1em;
+        left: 0.5em;
+        z-index: 1;
+        width: 2em;
+        height: 2em;
+        padding: 1em;
+    }
+
+    /* middle hamburger line */
+    #nav-bar .hamburger > div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    /* top and bottom hamburger lines */
+    #nav-bar .hamburger > div:before,
+    #nav-bar .hamburger > div:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+
+    /* bottom hamburger line position */
+    #nav-bar .hamburger > div:after {
+        top: 10px;
+    }
+
+    /* toggler animation */
+    .toggler:checked + #nav-bar > .hamburger > div {
+        transform: rotate(135deg);
+    }
+
+    /* turns lines into X */
+    .toggler:checked + #nav-bar > .hamburger > div:before,
+    .toggler:checked + #nav-bar > .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4em auto 0;
+        padding: 0;
+        visibility: hidden;
+    }
+
+    #nav-ul a {
+        margin: 0;
+        padding: 0.5em 0;
+    }
+
+    /* show menu */
+    .toggler:checked + #nav-bar #nav-ul {
+        visibility: visible;
+    }
+
+    .toggler:checked ~ #nav-bar {
+        background-color: #1b2d32;
+        height: auto;
+        transition: all 0.4s ease;
     }
 
     #rectangle {
