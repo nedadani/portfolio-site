@@ -98,8 +98,6 @@ const navBarBehaviour = (function() {
 })();
 
 const contactForm = (function() {
-    //Contact form
-
     (function() {
         emailjs.init("user_S0B8ciC0SBiJrDpcETzeW");
     })();
@@ -118,14 +116,14 @@ const contactForm = (function() {
             });
     };
 
-    function resetForm() {
-        const btn = document.getElementById("send-button");
+    //resetting the form after submit
 
-        document.addEventListener("submit", function() {
-            document.getElementById("contact-details").reset();
-        });
+    const btn = document.getElementById("send-button");
+
+    document.addEventListener("submit", function() {
+        document.getElementById("contact-details").reset();
 
         btn.innerHTML = "Sent!";
         btn.setAttribute("disabled", "");
-    }
+    });
 })();
