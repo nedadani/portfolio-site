@@ -116,7 +116,7 @@ const contactForm = (function() {
             });
     };
 
-    //resetting the form after submit
+    //Resetting the form after submit
 
     const btn = document.getElementById("send-button");
 
