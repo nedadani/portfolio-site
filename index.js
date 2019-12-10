@@ -98,9 +98,9 @@ const navBarBehaviour = (function() {
 })();
 
 const contactForm = (function() {
-    (function() {
-        emailjs.init("user_S0B8ciC0SBiJrDpcETzeW");
-    })();
+    //Submitting the form
+
+    emailjs.init("user_S0B8ciC0SBiJrDpcETzeW");
 
     window.onload = function() {
         document
