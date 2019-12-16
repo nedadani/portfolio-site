@@ -224,6 +224,15 @@ video:focus {
     outline: 0;
 }
 
+.inactive {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.inactive:hover {
+    opacity: 0.5;
+}
+
 .github-logo {
     font-size: 1.1em;
     color: var(--white);
